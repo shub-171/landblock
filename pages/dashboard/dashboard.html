@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dashboard | Land Registration System</title>
+   <link rel="stylesheet" href="/src/css/output.css">
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <div class="px-3 py-3 lg:px-5 lg:pl-3">
+         <div class="flex items-center justify-between">
+            <div class="flex items-center justify-start">
+               <button data-drawer-target="logo-sidebar" id="dashboardSidebar" data-drawer-toggle="logo-sidebar"
+                  aria-controls="logo-sidebar" type="button"
+                  class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path clip-rule="evenodd" fill-rule="evenodd"
+                        d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                     </path>
+                  </svg>
+               </button>
+               <a href="#" class="flex ml-2 md:mr-24">
+                  <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="FlowBite Logo" />
+                  <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Land
+                     Registration</span>
+               </a>
+            </div>
+            <div class="flex items-center">
+               <div class="flex items-center ml-3">
+                  <button type="button"
+                     class="flex items-center text-sm rounded-md focus:ring-2 p-2 focus:ring-gray-200 dark:focus:ring-gray-600"
+                     id="userToogle" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                     <span class="text-gray-700 mr-2 font-bold text-base dark:text-white max-sm:hidden">Shubham
+                        Agrawal</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-700 w-5 h-5 rounded-full" width="16"
+                        height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                           d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                     </svg>
+                     <!-- <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo"> -->
+                  </button>
+                  <div
+                     class="z-50 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                     id="dropdown-user" style=" position: absolute; top: 55px; right: 10px; ">
+                     <ul>
+                        <li>
+                           <div href="#"
+                              class="flex mb-1 rounded sm:hidden items-center px-4 py-2 text-sm text-gray-700 dark:text-gray-300"
+                              role="menuitem">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" width="16" height="16"
+                                 fill="currentColor" viewBox="0 0 16 16">
+                                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                              </svg>
+                              Shubham Agrawal
+                           </div>
+                           <hr class="mb-1 mx-2 sm:hidden">
+                        </li>
+                        <li>
+                           <a href="#"
+                              class="flex items-center rounded px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                              role="menuitem">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" width="16" height="16"
+                                 fill="currentColor" viewBox="0 0 16 16">
+                                 <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                              </svg>
+                              Visit Website
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#"
+                              class="flex items-center rounded px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                              role="menuitem">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" width="16" height="16"
+                                 fill="currentColor" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd"
+                                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                 <path fill-rule="evenodd"
+                                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                              </svg>
+                              Sign out
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </nav>
+
+   <!-- Sidebar -->
+   <aside id="logo-sidebar"
+      class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+      aria-label="Sidebar">
+      <div class="h-full px-3 pb-4 overflow-y-auto bg-transparent dark:bg-gray-800" id="sidebar">
+         <ul class="space-y-2 font-medium">
+            <li>
+               <a href="dashboard.html"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white bg-gray-300 dark:hover:bg-gray-700">
+                  <svg aria-hidden="true"
+                     class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                     <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                  </svg>
+                  <span class="ml-3">Dashboard</span>
+               </a>
+            </li>
+            <li>
+               <a href="dashboard-profile.html"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                  <svg aria-hidden="true"
+                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                        clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="flex-1 ml-3 whitespace-nowrap">Profile</span>
+                  <!-- <span class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span> -->
+               </a>
+            </li>
+            <li>
+               <a href="dashboard-ownedlands.html"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                     width="14" height="14" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg>
+                  <span class="flex-1 ml-3 whitespace-nowrap">Owned Lands</span>
+                  <!-- <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span> -->
+               </a>
+
+            </li>
+            <li>
+               <a href="#" id="buyLandBtnDashboard"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                     width="16" height="16" fill="currentColor" class="bi bi-house-add-fill" viewBox="0 0 16 16">
+                     <path
+                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 1 1-1 0v-1h-1a.5.5 0 1 1 0-1h1v-1a.5.5 0 0 1 1 0Z" />
+                     <path
+                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                     <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                  </svg>
+                  <span class="flex-1 ml-3 whitespace-nowrap">Buy Land</span>
+                  <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                     <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                  </svg>
+               </a>
+               <div id="buyLandListDashboard" class="hidden w-full origin-top-right focus:outline-none" role="menu"
+                  aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                  <div class="py-1" role="none">
+                     <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                     <a href="#"
+                        class="block px-4 pl-7 ml-11 py-2 text-base text-gray-700 rounded-lg hover:bg-gray-200 "
+                        role="menuitem" tabindex="-1" id="menu-item-0">Land Details</a>
+                     <a href="#" class="block px-4 pl-7 ml-11 py-2 text-base text-gray-700 rounded-lg hover:bg-gray-200"
+                        role="menuitem" tabindex="-1" id="menu-item-1">Payment</a>
+                  </div>
+               </div>
+            </li>
+            <li>
+            <li>
+               <a href="#" id="sellLandBtnDashboard"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                     width="16" height="16" fill="currentColor" class="bi bi-house-dash-fill" viewBox="0 0 16 16">
+                     <path
+                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                     <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                     <path
+                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 1 1 0-1Z" />
+                  </svg>
+                  <span class="flex-1 ml-3 whitespace-nowrap">Sell Land</span>
+                  <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                     <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                  </svg>
+               </a>
+               <div id="sellLandListDashboard" class="hidden w-full origin-top-right focus:outline-none" role="menu"
+                  aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                  <div class="py-1" role="none">
+                     <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                     <a href="#" class="block px-4 pl-7 ml-11 py-2 text-base text-gray-700 rounded-lg hover:bg-gray-200"
+                        role="menuitem" tabindex="-1" id="menu-item-0">Land Details</a>
+                     <a href="#" class="block px-4 pl-7 ml-11 py-2 text-base text-gray-700 rounded-lg hover:bg-gray-200"
+                        role="menuitem" tabindex="-1" id="menu-item-0">Land Request</a>
+                  </div>
+               </div>
+            </li>
+            </li>
+            <li>
+               <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                     width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                     <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                  </svg>
+                  <span class="flex-1 ml-3 whitespace-nowrap">Help</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </aside>
+
+   <!-- Main Body -->
+   <div class="p-4 sm:ml-64 max-sm:mt-5" id="webpage">
+      <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+         <section class="text-gray-600 body-font max-sm:my-3">
+            <div class="container py-2 mx-auto">
+               <div class="px-4 sm:px-0 border-b-2 pb-2">
+                  <h3 class="font-semibold text-2xl leading-7 text-gray-900">Dashboard</h3>
+               </div>
+               <div class="flex flex-wrap mt-14">
+                  <div
+                     class="p-4 h-max flex flex-col text-center items-center bg-green-400 rounded-lg w-[32.7%] max-lg:w-full max-md:w-full">
+                     <div
+                        class="w-16 h-16 inline-flex mt-[-50px] items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-2 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                           stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                           <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                     </div>
+                     <div class="flex-grow ">
+                        <h2 class="text-gray-900 text-5xl font-medium mb-2 max-lg:text-4xl">5</h2>
+                        <p class="leading-relaxed font-semibold text-2xl max-lg:text-xl">Owned Lands</p>
+                     </div>
+                  </div>
+                  <div
+                     class="p-4 lg:mx-1 h-max flex flex-col text-center items-center bg-red-400 rounded-lg w-[32.7%] max-lg:w-[49.5%] max-lg:mt-12 max-lg:mr-1 max-md:w-full max-md:mt-12">
+                     <div
+                        class="w-16 h-16 inline-flex mt-[-50px] items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-2 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                           stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                           <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                     </div>
+                     <div class="flex-grow ">
+                        <h2 class="text-gray-900 text-5xl  font-medium mb-2 max-lg:text-4xl">2</h2>
+                        <p class="leading-relaxed text-2xl font-semibold max-lg:text-xl">Buy Lands</p>
+                     </div>
+                  </div>
+                  <div
+                     class="p-4 h-max flex flex-col text-center items-center bg-blue-400 rounded-lg w-[32.7%] max-lg:w-[49.5%] max-lg:mt-12 max-md:w-full max-md:mt-12">
+                     <div
+                        class="w-16 h-16 inline-flex mt-[-50px] items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-2 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                           stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                           <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                     </div>
+                     <div class="flex-grow ">
+                        <h2 class="text-gray-900 text-5xl font-medium mb-2 max-lg:text-4xl">0</h2>
+                        <p class="leading-relaxed text-2xl font-semibold max-lg:text-xl">Sell Lands</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+      </div>
+   </div>
+   <script src="/src/js/dashboard.js"></script>
+</body>
+
+</html>
