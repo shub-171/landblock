@@ -1889,6 +1889,14 @@ select {
   line-height: 1rem;
 }
 
+.text-\[400px\] {
+  font-size: 400px;
+}
+
+.text-\[700px\] {
+  font-size: 700px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2027,6 +2035,14 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[400\] {
+  color: 400;
 }
 
 .decoration-2 {
