@@ -11,82 +11,92 @@
 
 <body>
     <div class="w-80 mx-auto mt-5 p-7">
-        <p class="text-2xl font-medium text-gray-800">
-            Click here to open to the modal
-        </p>
         <button
             class="bg-green-500 rounded-md px-8 py-2 text-base font-medium hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300 text-red-600"
-            id="open-btn">
+            id="open-register-btn">
             Open Modal
         </button>
     </div>
 
-    <div class="hidden container absolute top-1/2 left-1/2 z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="modal-body">
+    <div class="hidden container absolute top-1/2 left-1/2 z-10" aria-labelledby="registerTitle" role="dialog"
+        aria-modal="true" id="registerModal">
 
         <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
-        <div class="fixed inset-0 z-10 overflow-y-auto">
-            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-
-                <div
-                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                        <div class="sm:flex sm:items-start">
-                            <div
-                                class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                                <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-                                </svg>
+        <div class="fixed inset-0 z-10 overflow-y-auto flex justify-center items-center">
+            <section>
+                <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                    
+                    <div class="w-[120%] max-sm:w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                        <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                            <div class="flex justify-between items-center">
+                                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                                    Create an account
+                                </h1>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="regCross" class="cursor-pointer" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
                             </div>
-                            <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
-                                <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Deactivate
-                                    account</h3>
-                                <div class="mt-2">
-                                    <p class="text-sm text-gray-500">Are you sure you want to deactivate your account?
-                                        All of your data will be permanently removed. This action cannot be undone.</p>
+                            <form class="space-y-4 md:space-y-6" action="#">
+                                <div>
+                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="">
                                 </div>
-                            </div>
+                                <div>
+                                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                                </div>
+                                <div>
+                                    <label for="confirm-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm Password</label>
+                                    <input type="password" name="confirm-password" id="confirm-password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                                </div>
+                                
+                                
+                                
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                      <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
+                                    </div>
+                                    <div class="ml-3 text-sm">
+                                      <label for="terms" class="font-light text-gray-500 dark:text-gray-300">I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Create an account</button>
+                                <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                                    Already have an account? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
+                                </p>
+                            </form>
                         </div>
                     </div>
-                    <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                        <button type="button"
-                            class="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto">Deactivate</button>
-                        <button type="button" id="ok-btn"
-                            class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Cancel</button>
-                    </div>
                 </div>
-            </div>
+              </section>
         </div>
     </div>
 
 
 
-
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus modi cumque, unde consequuntur id quos recusandae delectus minus repellat earum natus possimus nemo nulla esse aspernatur hic consectetur tempora repellendus quisquam commodi quod odit, libero assumenda! Quas architecto, possimus unde, ratione nobis inventore voluptatem incidunt magnam exercitationem optio quaerat ut veritatis totam hic aliquid perferendis in vel doloribus cupiditate, temporibus laudantium culpa eius? Et quae laboriosam veniam natus consequuntur voluptate earum voluptatum inventore perspiciatis dolore accusantium, sint iste provident delectus impedit nulla libero sapiente enim aperiam. Reiciendis magnam quos autem culpa, est harum itaque eligendi ex recusandae repudiandae, totam vel quidem! Ex harum omnis necessitatibus sit dolorem, quis incidunt, ab deserunt odit neque, repellendus quidem quibusdam. Modi laudantium repellendus soluta a ut ipsa enim, provident sapiente cumque impedit aut rem eaque ea numquam quasi molestias nobis optio iusto id. Aperiam consequuntur molestias reprehenderit dicta dolor, vel mollitia nam laborum, est voluptatem unde dolore cupiditate alias distinctio labore. Alias sapiente, autem, voluptas ea dolores fugiat ipsa molestias amet et possimus ipsam recusandae veritatis rerum est, tenetur voluptates atque. Perferendis labore ratione rerum, ad quis doloremque pariatur est vero atque in amet obcaecati corrupti animi iure illum possimus? Quisquam delectus ratione, reiciendis a obcaecati quasi doloribus sit fugit rem sequi ea distinctio libero quos ipsum! Corrupti asperiores iusto earum sapiente dolores ad inventore vero excepturi dolorem expedita cumque ratione, magnam, pariatur unde rem praesentium? Magni aspernatur fuga dolores quasi, beatae voluptate quam rem nobis odio corporis temporibus quia, iste esse odit deleniti suscipit repellendus maiores! Quisquam asperiores odit sed molestias numquam rem iste atque a. Est cum porro accusamus similique fuga commodi, optio enim quibusdam numquam! Rerum atque corporis pariatur vel dolore molestias fugit autem modi, officia maiores sequi quae blanditiis ipsum et beatae architecto iusto dolorem deleniti consectetur nostrum, sed sunt natus? Laborum doloremque incidunt, similique ducimus iure neque soluta maiores, impedit adipisci fugit accusantium eaque debitis voluptatum repellendus consectetur error? Repudiandae culpa alias tempora provident minima assumenda, nihil, amet voluptate magni inventore perspiciatis saepe officia. Porro, impedit sed. Dignissimos libero necessitatibus eligendi id rerum cupiditate similique fugit suscipit nostrum nemo exercitationem explicabo, veniam odio perspiciatis qui ducimus reiciendis animi aut ipsum dolor illum, perferendis maxime. Deserunt harum consequatur tempore possimus reiciendis, ipsum, sed cum nulla, similique nesciunt aspernatur optio molestias voluptatum tempora a corrupti? Commodi, earum. Atque eveniet in voluptatem iste delectus perferendis veniam ipsam, nihil reiciendis repellat asperiores quaerat, iure quibusdam nemo! Vitae magnam, fuga quam blanditiis veniam at sit ipsa beatae rerum consectetur quis voluptates perferendis saepe dolorum totam ex commodi nemo soluta. Illo nobis nulla hic perspiciatis unde culpa eaque libero voluptatem obcaecati! Molestias cupiditate quasi natus error necessitatibus cumque nihil iusto qui? Quas numquam quae at alias quis voluptatum, labore error iusto perferendis, eius nisi! Blanditiis perspiciatis nostrum vitae repellendus sunt harum eligendi accusantium suscipit porro atque. Repudiandae, et incidunt? Iste ea amet excepturi et vel nihil voluptas quo, dignissimos laudantium laboriosam adipisci neque doloribus. Assumenda odit a commodi delectus consequatur. Cum, molestias veniam! Ab dicta libero, dolore corporis quia saepe explicabo porro repellat quos, assumenda, eos vel maiores atque omnis voluptas nesciunt fuga quo. Doloremque facere enim cumque distinctio expedita ad. Minus ipsum ullam at perferendis quidem tempore, repellat sapiente! Tempore, omnis mollitia ducimus ad quibusdam aspernatur perferendis, provident natus inventore voluptate consequuntur ullam architecto harum. Dolorum culpa aperiam, possimus eligendi rem odit reiciendis amet magnam distinctio officia? Eos sit totam commodi aut eaque nobis atque aspernatur praesentium ipsa nemo at minima suscipit distinctio, ipsam quae aliquam numquam dolorum quam explicabo asperiores? Totam amet officia voluptates odio. Pariatur voluptatibus quas et magni, consequuntur modi distinctio quo, laboriosam asperiores iure iste voluptatem atque tempore illum quidem molestias eos fuga! Iure enim recusandae vero fuga voluptate vitae dolorum aliquam nesciunt alias! Quisquam atque incidunt quasi harum iure non qui tempora quam magni similique quaerat ullam eligendi, nemo eveniet in cupiditate minima, sit, reiciendis omnis fuga! Nostrum, libero quae sit minima consectetur, fugit facilis iste doloremque unde, explicabo quam rem recusandae ab minus officiis? Saepe consequatur aperiam eum aliquid, laudantium quas cumque distinctio dolorem eveniet nesciunt cupiditate et, quo voluptatibus illum voluptate possimus minima pariatur fuga, quaerat ex quisquam necessitatibus non praesentium deleniti. Hic rerum quos, ut blanditiis veniam quibusdam, tempore repellat quia id, repellendus et maiores officiis ad exercitationem. Amet voluptatem veniam eaque consequatur iste totam. Debitis a veritatis placeat praesentium reiciendis aperiam sapiente modi voluptatibus molestiae perspiciatis voluptas dolorem, quos adipisci unde. Velit tenetur fugiat obcaecati dicta impedit debitis amet recusandae, vel modi quae. Adipisci, obcaecati maxime? Quis sit, et aliquam dolorem maxime nam reiciendis ipsam eos facere ipsum corporis, consequatur magnam vitae libero, iusto tenetur! Voluptatem voluptates sapiente, fugiat ut necessitatibus minus odio soluta doloribus pariatur voluptate numquam quibusdam tempora saepe aut et ipsam, qui tempore ullam? Culpa aperiam iusto vitae sequi maiores officia animi sint quasi mollitia impedit. Laudantium voluptatem earum reiciendis, tenetur, aliquam neque voluptates quisquam repellat, tempore illum voluptas aut. Sint nobis distinctio ea, tempora cupiditate rerum quis temporibus explicabo voluptates quibusdam dolores a harum fugiat velit non quae sunt eligendi rem quos. Repellat inventore harum, excepturi tempore hic sit, magni dolorem totam aliquam optio nobis fugiat voluptatem eaque saepe. Ipsa veniam pariatur velit sit! Nam eum praesentium dignissimos nisi aut, quasi veniam dicta excepturi fugiat quibusdam explicabo, consequatur iusto, expedita nulla obcaecati earum rem veritatis possimus? Obcaecati numquam mollitia in dicta dolor unde quidem est facilis nam ipsum. Harum eum quidem suscipit non nesciunt dolorum necessitatibus odio reiciendis dolorem veritatis laboriosam, quisquam natus nihil exercitationem mollitia omnis quod tempore vel quaerat neque explicabo quo aut repudiandae. Sint dolore illo fugit nobis. Ab dolores maxime perspiciatis ea error sunt, tempora ipsam hic nemo suscipit. Repellat debitis obcaecati fugit ut fugiat adipisci eveniet a. Omnis, blanditiis quod. Sed a pariatur aliquam illo voluptatibus dolores obcaecati nulla modi. Perspiciatis recusandae exercitationem, ipsum voluptas quisquam nulla itaque modi id delectus molestiae mollitia reprehenderit veniam sit voluptates eius impedit iusto soluta! Error, quis illo? Veniam perspiciatis hic at, cum sit aperiam atque quos aspernatur non inventore?</p>
 
 
 
     <script>
-        let modal = document.getElementById("modal-body");
-
-        let btn = document.getElementById("open-btn");
-
-        let button = document.getElementById("ok-btn");
+        let modal = document.getElementById("registerModal");
+        let btn = document.getElementById("open-register-btn");
+        let regCross = document.getElementById("regCross");
         // We want the modal to open when the Open button is clicked
         btn.onclick = function () {
             modal.style.display = "block";
         }
         // We want the modal to close when the OK button is clicked
-        button.onclick = function () {
+        regCross.onclick = function () {
             modal.style.display = "none";
         }
 
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
             }
-        }
     </script>
 </body>
 
