@@ -2,95 +2,96 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/src/css/output.css">
-	<title>Land Registry</title>
-	<!--     npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch      -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <title>Land Registry</title>
+    <!--     npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch      -->
 </head>
 
 <body>
-	<nav class="bg-white border-gray-200 dark:bg-gray-900">
-		<div class="flex justify-between items-center bg-gray-200 p-4">
-			<div>
-				<a href="index.html" class="flex items-center">
-					<img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
-					<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-				</a>
-			</div>
-			<div class="flex items-center">
+    <nav class="bg-white border-gray-200">
+        <div class="flex justify-between items-center bg-gray-200 p-4">
+            <div>
+                <a href="index.html" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
+                </a>
+            </div>
+            <div class="flex items-center">
 
-				<button type="button"
-					class="hidden mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 order-2"
-					id="btnUser" aria-expanded="false" data-dropdown-toggle="user-dropdown"
-					data-dropdown-placement="bottom">
-					<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
-				</button>
-				<div class="z-50 hidden my-4 text-base list-none bg-white divide-y top-16 right-2 absolute divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 order-3"
-					id="userMenu">
-					<div class="px-4 py-1">
-						<span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
-						<span class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
-					</div>
-					<ul class="py-2" aria-labelledby="user-menu-button">
-						<li>
-							<a href="#"
-								class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
-						</li>
-						<li>
-							<a href="#"
-								class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-								out</a>
-						</li>
-					</ul>
-				</div>
-				<button data-collapse-toggle="mobile-menu-2" type="button" id="navBar"
-					class=" order-4 inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
-					aria-controls="mobile-menu-2" aria-expanded="false">
-					<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-						xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd"
-							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-							clip-rule="evenodd"></path>
-					</svg>
-				</button>
-				<div class=" hidden items-center justify-between w-full md:flex md:w-auto md:order-1 order-1"
-					id="navContent">
-					<ul
-						class="flex font-medium p-4 md:p-0 mt-4 max-md:flex-col max-md:absolute max-md:w-full max-md:left-0 max-md:justify-center max-md:items-center max-md:bg-gray-100 max-md:mt-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-						<li class="max-md:border-b-2 border-gray-300 w-full text-center md:mx-3">
-							<a href="index.html"
-								class="block px-4 mr-3  py-5 rounded md:bg-transparent w-full md:text-blue-700 md:p-0 md:dark:text-blue-500 md:mx-3"
-								aria-current="page">Home</a>
-						</li>
-						<li class="max-md:border-b-2 border-gray-300 w-full text-center">
-							<a href="#"
-								class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-						</li>
-						<li class="max-md:border-b-2 border-gray-300 w-full text-center">
-							<a href="#"
-								class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-						</li>
-						<li class="max-md:border-b-2 border-gray-300 w-full text-center">
-							<a href="#"
-								class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-						</li>
-						<li class="flex px-4 max-md:py-5">
-							<p id="open-login-btn"
-								class="cursor-pointer block text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Login</p>
-							&nbsp;/&nbsp;
-							<p id="open-register-btn"
-								class="cursor-pointer block text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Register</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
+                <button type="button"
+                    class="hidden mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 order-2"
+                    id="btnUser" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                    data-dropdown-placement="bottom">
+                    <img class="w-8 h-8 rounded-full" src="#" alt="user photo">
+                </button>
+                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y top-16 right-2 absolute divide-gray-100 rounded-lg shadow order-3"
+                    id="userMenu">
+                    <div class="px-4 py-1">
+                        <span class="block text-sm text-gray-900">Bonnie Green</span>
+                        <span class="block text-sm  text-gray-500 truncate">name@flowbite.com</span>
+                    </div>
+                    <ul class="py-2" aria-labelledby="user-menu-button">
+                        <li>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign
+                                out</a>
+                        </li>
+                    </ul>
+                </div>
+                <button data-collapse-toggle="mobile-menu-2" type="button" id="navBar"
+                    class=" order-4 inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+                    aria-controls="mobile-menu-2" aria-expanded="false">
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden items-center justify-between w-full md:flex md:w-auto md:order-1 order-1"
+                    id="navContent">
+                    <ul
+                        class="flex font-medium p-4 md:p-0 mt-4 max-md:flex-col max-md:absolute max-md:w-full max-md:left-0 max-md:justify-center max-md:items-center max-md:bg-gray-100 max-md:mt-8 md:mt-0 md:border-0">
+                        <li class="max-md:border-b-2 border-gray-300 w-full text-center md:mx-3">
+                            <a href="index.html"
+                                class="block px-4 mr-3  py-5 rounded md:bg-transparent w-full md:text-blue-700 md:p-0 md:mx-3"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li class="max-md:border-b-2 border-gray-300 w-full text-center">
+                            <a href="#"
+                                class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0">About</a>
+                        </li>
+                        <li class="max-md:border-b-2 border-gray-300 w-full text-center">
+                            <a href="#"
+                                class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0">Services</a>
+                        </li>
+                        <li class="max-md:border-b-2 border-gray-300 w-full text-center">
+                            <a href="#"
+                                class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0">Contact</a>
+                        </li>
+                        <li class="flex px-4 max-md:py-5">
+                            <p id="open-login-btn"
+                                class="cursor-pointer block text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0">
+                                Login</p>
+                            &nbsp;/&nbsp;
+                            <p id="open-register-btn"
+                                class="cursor-pointer block text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0">
+                                Register</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-	<!-- Register modal body  -->
-	<div class="hidden container absolute top-1/2 left-1/2 z-10" aria-labelledby="regTitle" role="dialog"
+
+    <!-- Register modal body  -->
+    <div class="hidden container absolute top-1/2 left-1/2 z-10" aria-labelledby="regTitle" role="dialog"
         aria-modal="true" id="registerModal">
 
         <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
@@ -98,55 +99,153 @@
         <div class="fixed inset-0 z-10 overflow-y-auto flex justify-center items-center">
             <section>
                 <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-                    
-                    <div class="w-[120%] max-sm:w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="w-[120%] max-sm:w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
                         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                             <div class="flex justify-between items-center">
-                                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                                     Create an account
                                 </h1>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="regCross" class="cursor-pointer" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    id="regCross" class="cursor-pointer" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
                             </div>
-                            <form class="space-y-4 md:space-y-6" action="#">
+                            <form class="space-y-4 md:space-y-6" id="registerForm" action="#">
                                 <div>
-                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required="">
+                                    <label for="regEmail" class="block mb-2 text-sm font-medium text-gray-900">Your
+                                        email</label>
+                                    <input autocomplete="on" type="email" name="regEmail" id="regEmail"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        placeholder="Enter your email" required />
                                 </div>
                                 <div>
-                                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                                    <input type="password" name="password" id="password" placeholder="Enter password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                                    <label for="regPassword"
+                                        class="block mb-2 text-sm font-medium text-gray-900">Password</label>
+                                    <input type="password" name="regPassword" id="regPassword"
+                                        placeholder="Enter password"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        required />
                                 </div>
                                 <div>
-                                    <label for="confirm-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm Password</label>
-                                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Enter confirmed password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                                    <label for="confirmPassword"
+                                        class="block mb-2 text-sm font-medium text-gray-900">Confirm
+                                        Password</label>
+                                    <input type="password" name="confirmPassword" id="confirmPassword"
+                                        placeholder="Enter confirmed password"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        required />
+                                    <span id="confirmPassCheck" class="text-red-900 text-xs"></span>
                                 </div>
-                                
-                                
-                                
+
+
+
                                 <div class="flex items-start">
                                     <div class="flex items-center h-5">
-                                      <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
+                                        <input id="terms" required aria-describedby="terms" type="checkbox"
+                                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300" />
                                     </div>
                                     <div class="ml-3 text-sm">
-                                      <label for="terms" class="font-light text-gray-500 dark:text-gray-300">I accept the <a class="font-medium text-primary-600 hover:underline dark:text-primary-500" href="#">Terms and Conditions</a></label>
+                                        <label for="terms" class="font-light text-gray-500">I
+                                            accept
+                                            the <a class="font-medium text-primary-600 hover:underline" href="#">Terms
+                                                and Conditions</a></label>
                                     </div>
                                 </div>
-                                <button type="submit" class="w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Create an account</button>
-                                <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                                    Already have an account? <span id="open-login-btn2" class="cursor-pointer font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</span>
+                                <button type="submit" id="registerBtn"
+                                    class="w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Create
+                                    an account</button>
+                                <p class="text-sm font-light text-gray-500">
+                                    Already have an account? <span id="open-login-btn2"
+                                        class="cursor-pointer font-medium text-primary-600 hover:underline">Login
+                                        here</span>
                                 </p>
+                            </form>
+                            <!-- Otp Verification -->
+                            <form class="hidden space-y-4 md:space-y-6" id="regOtpform" action="#">
+                                <div>
+                                    <label for="otp" class="block mb-2 text-sm font-medium text-gray-900">Enter
+                                        OTP</label>
+                                    <input type="text" maxlength="6" max="999999" min="0" name="regOtp" id="regOtp"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        placeholder="Enter OTP" required>
+                                    <span id="checkOtpMessage" class="text-red-900 text-xs"></span>
+                                </div>
+                                <button type="submit" id="regCheckOtp"
+                                    class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Check
+                                    OTP</button>
+                            </form>
+                            <!-- More details form -->
+                            <form class="hidden space-y-4 md:space-y-6" id="regDetailsForm" action="#">
+                                <div>
+                                    <div class="py-1 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-0">
+                                        <label for="fullName" class="block mb-2 text-sm font-medium text-gray-900">Full
+                                            Name</label>
+                                        <input autocomplete="on" type="text" name="fullName" id="fullName"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                            placeholder="Enter Full Name" required />
+                                    </div>
+                                    <div class="py-1 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-0">
+                                        <label for="birthDate"
+                                            class="block mb-2 text-sm font-medium text-gray-900">Birth
+                                            Date</label>
+                                        <input type="date" name="birthDate" id="birthDate"
+                                            placeholder="Enter your Birth Date"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                            required />
+                                    </div>
+                                    <div class="py-1 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-0">
+                                        <label for="city"
+                                            class="block mb-2 text-sm font-medium text-gray-900">City</label>
+                                        <input type="text" name="city" id="city" placeholder="Enter City"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                            required />
+                                    </div>
+                                    <div class="py-1 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-0">
+                                        <label for="state"
+                                            class="block mb-2 text-sm font-medium text-gray-900">State</label>
+                                        <input type="text" name="state" id="state" placeholder="Enter state"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                            required />
+                                    </div>
+                                    <div class="py-1 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-0">
+                                        <label for="wallet" class="block mb-2 text-sm font-medium text-gray-900">Wallet
+                                            Address</label>
+                                        <input autocomplete="on" type="text" name="wallet" id="wallet"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                            placeholder="Enter Wallet Address" required />
+                                    </div>
+
+                                    <div class="py-1 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-0">
+                                        <label for="adhar" class="block mb-2 text-sm font-medium text-gray-900">Adhar
+                                            Number</label>
+                                        <input type="text" pattern="[0-9]" name="adhar" id="adhar"
+                                            placeholder="Enter Adhar Number"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                            required />
+                                    </div>
+                                    <div class="py-1 sm:grid sm:grid-cols-2 sm:gap-4 sm:px-0">
+                                        <label for="pan" class="block mb-2 text-sm font-medium text-gray-900">Pan
+                                            Number</label>
+                                        <input type="text" pattern="[0-9]" name="pan" id="pan"
+                                            placeholder="Enter Pan Number"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                            required />
+                                    </div>
+                                </div>
+                                <button type="submit" id="regDetails"
+                                    class=" mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center">Register</button>
                             </form>
                         </div>
                     </div>
                 </div>
-              </section>
+            </section>
         </div>
     </div>
 
-	<!-- Login Modal -->
-	<div class="hidden container absolute top-1/2 left-1/2 z-10" aria-labelledby="loginTitle" role="dialog"
+    <!-- Login Modal -->
+    <div class="hidden container absolute top-1/2 left-1/2 z-10" aria-labelledby="loginTitle" role="dialog"
         aria-modal="true" id="loginModal">
 
         <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
@@ -154,42 +253,52 @@
         <div class="fixed inset-0 z-10 overflow-y-auto flex justify-center items-center">
             <section>
                 <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-                    
-                    <div class="w-[120%] max-sm:w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="w-[120%] max-sm:w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
                         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                             <div class="flex justify-between items-center">
-                                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                                     Login
                                 </h1>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="loginCross" class="cursor-pointer" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    id="loginCross" class="cursor-pointer" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
                             </div>
                             <form class="space-y-4 md:space-y-6" action="#">
                                 <div>
-                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required="">
+                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your
+                                        email</label>
+                                    <input type="email" autocomplete="on" name="email" id="email"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        placeholder="Enter your email" required>
                                 </div>
                                 <div>
-                                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                                    <input type="password" name="password" id="password" placeholder="Enter password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                                    <label for="password"
+                                        class="block mb-2 text-sm font-medium text-gray-900">Password</label>
+                                    <input type="password" name="password" id="password" placeholder="Enter password"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        required>
                                 </div>
-								<div>
-								<button type="submit" class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Login</button>
-								<p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                                    Forgot Password? <span id="forgot-pass" class="cursor-pointer font-medium text-primary-600 hover:underline dark:text-primary-500">Reset</span>
-                                </p>
-							</div>
+                                <div>
+                                    <button type="submit"
+                                        class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Login</button>
+                                    <p class="text-sm font-light text-gray-500">
+                                        Forgot Password? <span id="forgot-pass"
+                                            class="cursor-pointer font-medium text-primary-600 hover:underline">Reset</span>
+                                    </p>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-              </section>
+            </section>
         </div>
     </div>
 
-	<!-- Forgot Password -->
-	<div class="hidden container absolute top-1/2 left-1/2 z-10" aria-labelledby="forgotPassTitle" role="dialog"
+    <!-- Forgot Password -->
+    <div class="hidden container absolute top-1/2 left-1/2 z-10" aria-labelledby="forgotPassTitle" role="dialog"
         aria-modal="true" id="forgotPassModal">
 
         <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
@@ -197,32 +306,488 @@
         <div class="fixed inset-0 z-10 overflow-y-auto flex justify-center items-center">
             <section>
                 <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-                    
-                    <div class="w-[120%] max-sm:w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="w-[120%] max-sm:w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
                         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                             <div class="flex justify-between items-center">
-                                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                                     Reset Password
                                 </h1>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="fpCross" class="cursor-pointer" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    id="fpCross" class="cursor-pointer" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
                             </div>
-                            <form class="space-y-4 md:space-y-6" action="#">
+                            <!-- send otp -->
+                            <form class="space-y-4 md:space-y-6" id="sendForm" action="#">
                                 <div>
-                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required="">
+                                    <label for="resetEmail" class="block mb-2 text-sm font-medium text-gray-900">Your
+                                        email</label>
+                                    <input type="email" autocomplete="on" name="resetEmail" id="resetEmail"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        placeholder="Enter your email" required>
                                 </div>
-								<button type="submit" class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send Verification Link</button>
+                                <button type="submit" id="sendOtp"
+                                    class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Send
+                                    Verification Link</button>
+                            </form>
+                            <!-- check otp -->
+                            <form class="hidden space-y-4 md:space-y-6" id="otpform" action="#">
+                                <div>
+                                    <label for="otp" class="block mb-2 text-sm font-medium text-gray-900">Enter
+                                        OTP</label>
+                                    <input type="text" maxlength="6" max="999999" min="0" name="otp" id="otp"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        placeholder="Enter OTP" required>
+                                    <span id="checkOtpMessage" class="text-red-900 text-xs"></span>
+                                </div>
+                                <button type="submit" id="checkOtp"
+                                    class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Check
+                                    OTP</button>
+                            </form>
+                            <!-- Enter new password -->
+                            <form class="hidden space-y-4 md:space-y-6" id="newPasswordForm" action="#">
+                                <div>
+                                    <label for="newPassword" class="block mb-2 text-sm font-medium text-gray-900">New
+                                        Password</label>
+                                    <input type="password" name="newPassword" id="newPassword"
+                                        placeholder="Enter new password"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        required>
+                                </div>
+                                <div>
+                                    <label for="confirmNewPassword"
+                                        class="block mb-2 text-sm font-medium text-gray-900">Confirm
+                                        New
+                                        Password</label>
+                                    <input type="password" name="confirmNewPassword" id="confirmNewPassword"
+                                        placeholder="Enter confirmed password"
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                        required>
+                                    <span id="newConfirmPassCheck" class="text-red-900 text-xs"></span>
+                                </div>
+                                <button type="submit" id="newPasswordBtn"
+                                    class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Check
+                                    OTP</button>
                             </form>
                         </div>
                     </div>
                 </div>
-              </section>
+            </section>
         </div>
     </div>
 
-	<script src="/src/js/main.js"></script>
+
+    <!-- main body -->
+    <div id="mainWebpage" class="h-full">
+
+        <section class="text-gray-600 body-font ">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1
+                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                        Welcome to <span class="text-blue-600 dark:text-blue-500">Land Registration</span> system
+                        <br class="hidden lg:inline-block"> <span class="text-blue-600 dark:text-blue-500">using
+                            blockchain</span>
+                    </h1>
+                    <p class="mb-8 leading-relaxed text-neutral-20 text-emerald-950 text-2xl">
+                        Welcome to our revolutionary land registration platform powered by blockchain technology. Say
+                        goodbye to cumbersome paperwork and endless bureaucracy. Our secure and transparent system ensures
+                        efficient and tamper-proof record-keeping, guaranteeing trust and reliability for all your land
+                        transactions. Experience a seamless and future-proof solution that simplifies the process and brings
+                        transparency to the world of land registration.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                        Learn more</a>
+    
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <img class="object-cover object-center rounded" alt="hero" src="/src/images/home.jpg">
+                </div>
+            </div>
+        </section>
+    
+    
+        <hr class="w-48 h-1 mx-auto my-1 bg-slate-950 border-0 rounded md:my-10 dark:bg-slate-900">
+    
+    
+        <!-- About -->
+        <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+            <div class="container mx-auto">
+                <div class="-mx-4 flex flex-wrap items-center justify-between">
+                    <div class="w-full px-4 lg:w-6/12">
+                        <div class="-mx-3 flex items-center sm:-mx-4">
+                            <div class="w-full px-3 sm:px-4 xl:w-2/8">
+                                <div class="relative z-10 my-4">
+                                    <img src="/src/images/aboutus.png" alt="" class="w-full rounded-2xl" />
+                                    <span class="absolute -right-7 -bottom-7 z-[-1]">
+                                        <svg width="134" height="106" viewBox="0 0 134 106" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+                        <div class="mt-10 lg:mt-0">
+                            <span
+                                class="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white hover:uppercase">
+                                <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">Why Choose Us</mark>
+                            </span>
+                            <h2 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
+                                Make your <span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">customers
+                                    happy</span> by giving services.
+                            </h2>
+                            <p class="text-gray-500 dark:text-gray-400 ">
+                                Welcome to our blockchain-based land registration platform! At [Company Name], we are
+                                revolutionizing the way land ownership is verified and recorded. With the power of
+                                blockchain technology, we provide a transparent, secure, and immutable solution for
+                                registering land titles.
+                                Our platform ensures the integrity of land records by leveraging decentralized consensus,
+                                eliminating the need for intermediaries and reducing the risk of fraud. By utilizing smart
+                                contracts, we automate and streamline the registration process, saving time and costs for
+                                both landowners and government authorities.
+                                With a team of experts in blockchain technology and land registration, we are committed to
+                                creating a trustworthy and efficient system that empowers individuals and promotes fair land
+                                ownership. Join us on this transformative journey as we reshape the future of land
+                                registration, one block at a time.
+                            </p>
+    
+                            <hr class="w-64 h-px my-8 bg-slate-950 border-0 dark:bg-slate-950">
+    
+                            <h2
+                                class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white">
+                                Our <span class="text-blue-600 dark:text-blue-500">mission</span></h2>
+                            <p class="text-gray-500 dark:text-gray-400">
+                                Our mission is to revolutionize user registration by leveraging the power of blockchain
+                                technology. We aim to provide a secure and transparent platform that ensures the integrity
+                                and privacy of user data. By utilizing blockchain, we eliminate the need for centralized
+                                authorities, reducing the risk of data breaches and identity theft. Our goal is to empower
+                                individuals with full control over their personal information while streamlining the
+                                registration process with efficiency and ease. Join us on this journey to create a more
+                                secure and user-centric registration experience.
+                            </p>
+                            <a href="javascript:void(0)"
+                                class="bg-primary inline-flex items-center justify-center rounded-lg py-4 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <hr class="w-48 h-1 mx-auto my-1 bg-slate-950 border-0 rounded md:my-10 dark:bg-slate-900">
+    
+        <!-- Services -->
+        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
+            <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    
+                <h2
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                    Features</h2>
+                <p class="text-base text-gray-700 md:text-lg">
+                    if you register your land with us so here is some awesome features for consumers to sell and buy lands.
+                </p>
+            </div>
+            <div class="grid gap-8 row-gap-10 lg:grid-cols-2">
+                <div class="max-w-md sm:mx-auto sm:text-center">
+                    <div
+                        class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
+                        <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
+                            viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                        </svg>
+                    </div>
+                    <h6 class="mb-3 text-xl font-bold leading-5">Ease of use</h6>
+                    <p class="mb-3 text-sm text-gray-900">
+                        It is extremely convenient to register a property using the Internet as the registration form can
+                        simply be downloaded online. Alternately, one can get the form from the concerned authority’s office
+                        in the state. Once the details mentioned on the form and related documents are verified, the
+                        property gets registered in approximately two-weeks' time.
+                    </p>
+                    <a href="/" aria-label=""
+                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
+                        more</a>
+                </div>
+                <div class="max-w-md sm:mx-auto sm:text-center">
+                    <div
+                        class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
+                        <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
+                            viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                        </svg>
+                    </div>
+                    <h6 class="mb-3 text-xl font-bold leading-5">Enhanced transparency</h6>
+                    <p class="mb-3 text-sm text-gray-900">
+                        Details including the entire history of ownership, number of rooms, gross carpet area and foundation
+                        details are listed online. The objective is to hide nothing about the property from a prospective
+                        buyer, says Rajan Kumar, Founding Director, Prop Window, Gurgaon. This increases transparency and
+                        minimises the chances of fraudulent practices in property deals.
+                    </p>
+                    <a href="/" aria-label=""
+                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
+                        more</a>
+                </div>
+                <div class="max-w-md sm:mx-auto sm:text-center">
+                    <div
+                        class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
+                        <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
+                            viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                        </svg>
+                    </div>
+                    <h6 class="mb-3 text-xl font-bold leading-5">Avoids litigation</h6>
+                    <p class="mb-3 text-sm text-gray-900">
+                        As e-registration enlists all transactions related to the property, it helps to provide evidence in
+                        case of any dispute. </p>
+                    <a href="/" aria-label=""
+                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
+                        more</a>
+                </div>
+                <div class="max-w-md sm:mx-auto sm:text-center">
+                    <div
+                        class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
+                        <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor"
+                            viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                        </svg>
+                    </div>
+                    <h6 class="mb-3 text-xl font-bold leading-5">Safety</h6>
+                    <p class="mb-3 text-sm text-gray-900">
+                        E-registration of property is safe on two accounts. Firstly, a hacker does not have access to
+                        property papers of an owner, such as the transfer of Power of Attorney. Secondly, there are multiple
+                        layers of security in government servers, which are SSL encrypted. In addition, they have a
+                        personalised login system. </p>
+                    <a href="/" aria-label=""
+                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
+                        more</a>
+                </div>
+            </div>
+        </div>
+    
+    
+        <hr class="w-48 h-1 mx-auto my-1 bg-slate-950 border-0 rounded md:my-10 dark:bg-slate-900">
+    
+        <!-- Testimonials -->
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <h1
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+                    Testimonials</h1>
+                <br> <br>
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                                </path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                                carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                                post-ironic heirloom try-hard pabst authentic iceland.</p>
+                            <a class="inline-flex items-center">
+                                <img alt="testimonial" src="https://dummyimage.com/106x106"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Vivek Parmar</span>
+                                    <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2 w-full">
+                        <div class="h-full bg-gray-100 p-8 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                                <path
+                                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                                </path>
+                            </svg>
+                            <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
+                                carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                                post-ironic heirloom try-hard pabst authentic iceland.</p>
+                            <a class="inline-flex items-center">
+                                <img alt="testimonial" src="https://dummyimage.com/107x107"
+                                    class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                                <span class="flex-grow flex flex-col pl-4">
+                                    <span class="title-font font-medium text-gray-900">Shubham Agrawal</span>
+                                    <span class="text-gray-500 text-sm">DESIGNER</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <hr class="w-48 h-1 mx-auto my-1 bg-slate-950 border-0 rounded md:my-10 dark:bg-slate-900">
+    
+        
+    
+        <!-- Contact -->
+        <section class="text-gray-600 body-font relative">
+            <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+                <div class="lg:w-2/9 md:w-1/2  overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                    <img src="/src/images/contect.jpg" alt="sorry">
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                    <h2 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-5xl"><span
+                            class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Contact</span>
+                        Us</h2>
+                    <p class="leading-relaxed mb-5 text-gray-600">
+                        If you have any query than please contect to our team.
+                    </p>
+                    <form action="">
+                    <div class="relative mb-4">
+                        <label for="name" autocomplete="on" class="leading-7 text-sm text-gray-600">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="contactEmail" autocomplete="on" class="leading-7 text-sm text-gray-600">Email</label>
+                        <input type="email" id="contactEmail" name="contactEmail"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="message" autocomplete="on" class="leading-7 text-sm text-gray-600">Message</label>
+                        <textarea id="message" name="message"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                    <button type="submit" class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Submit</button>               
+                </form>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+        <!-- Footer -->
+        <footer class="text-gray-600 bg-gray-700 body-font">
+            <div
+                class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2"
+                            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        <span class="ml-3 text-xl text-white">Tailblocks</span>
+                    </a>
+                    <p class="mt-2 text-sm text-white">Buy Land easily with us...!</p>
+                </div>
+                <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">First Link</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">Second Link</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">Third Link</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">Fourth Link</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">First Link</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">Second Link</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">Third Link</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">Fourth Link</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">First Link</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">Second Link</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">Third Link</a>
+                            </li>
+                            <li>
+                                <a class="text-white hover:text-gray-100" href="">Fourth Link</a>
+                            </li>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-100">
+                <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                    <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Land Registry —
+                        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                            target="_blank">@Teams</a>
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                        <a class="text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path stroke="none"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/src/js/main.js"></script>
 
 </body>
 
