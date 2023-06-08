@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/output.css">
-    <title>Land Registry</title>
+    <title>Landblocks | Land Registration System</title>
     <!--     npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch      -->
 </head>
 
 <body>
-    <nav class="bg-white border-gray-200">
+
+    <nav class="bg-white border-gray-200 fixed w-screen z-10">
         <div class="flex justify-between items-center bg-gray-200 p-4">
             <div>
-                <a href="index.html" class="flex items-center">
+                <a href="#" class="flex items-center">
                     <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
                 </a>
@@ -58,20 +59,24 @@
                     <ul
                         class="flex font-medium p-4 md:p-0 mt-4 max-md:flex-col max-md:absolute max-md:w-full max-md:left-0 max-md:justify-center max-md:items-center max-md:bg-gray-100 max-md:mt-8 md:mt-0 md:border-0">
                         <li class="max-md:border-b-2 border-gray-300 w-full text-center md:mx-3">
-                            <a href="index.html"
+                            <a href="#"
                                 class="block px-4 mr-3  py-5 rounded md:bg-transparent w-full md:text-blue-700 md:p-0 md:mx-3"
                                 aria-current="page">Home</a>
                         </li>
                         <li class="max-md:border-b-2 border-gray-300 w-full text-center">
-                            <a href="#"
+                            <a href="#about"
                                 class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0">About</a>
                         </li>
                         <li class="max-md:border-b-2 border-gray-300 w-full text-center">
-                            <a href="#"
+                            <a href="#services"
                                 class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0">Services</a>
                         </li>
                         <li class="max-md:border-b-2 border-gray-300 w-full text-center">
-                            <a href="#"
+                            <a href="#testimonials"
+                                class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0">Testimonials</a>
+                        </li>
+                        <li class="max-md:border-b-2 border-gray-300 w-full text-center">
+                            <a href="#contact"
                                 class="block px-4 mx-3 py-5 text-gray-900 rounded md:hover:bg-transparent hover:text-blue-700 md:p-0">Contact</a>
                         </li>
                         <li class="flex px-4 max-md:py-5">
@@ -88,7 +93,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- Register modal body  -->
     <div class="hidden container absolute top-1/2 left-1/2 z-10" aria-labelledby="regTitle" role="dialog"
@@ -378,50 +382,47 @@
         </div>
     </div>
 
-
     <!-- main body -->
     <div id="mainWebpage" class="h-full">
 
-        <section class="text-gray-600 body-font ">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <section class="text-gray-600 body-font pt-10">
+            <div class="container mx-auto flex py-20 px-10  md:flex-row flex-col items-center">
                 <div
                     class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1
-                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                        Welcome to <span class="text-blue-600 dark:text-blue-500">Land Registration</span> system
-                        <br class="hidden lg:inline-block"> <span class="text-blue-600 dark:text-blue-500">using
+                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+                        Welcome to <span class="text-blue-600">Land Registration</span> system
+                        <br class="hidden lg:inline-block"> <span class="text-blue-600">using
                             blockchain</span>
                     </h1>
                     <p class="mb-8 leading-relaxed text-neutral-20 text-emerald-950 text-2xl">
                         Welcome to our revolutionary land registration platform powered by blockchain technology. Say
-                        goodbye to cumbersome paperwork and endless bureaucracy. Our secure and transparent system ensures
+                        goodbye to cumbersome paperwork and endless bureaucracy. Our secure and transparent system
+                        ensures
                         efficient and tamper-proof record-keeping, guaranteeing trust and reliability for all your land
-                        transactions. Experience a seamless and future-proof solution that simplifies the process and brings
+                        transactions. Experience a seamless and future-proof solution that simplifies the process and
+                        brings
                         transparency to the world of land registration.
                     </p>
-                    <a href="#"
-                        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    <a href="#about"
+                        class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
                         Learn more</a>
-    
+
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                     <img class="object-cover object-center rounded" alt="hero" src="/src/images/home.jpg">
                 </div>
             </div>
         </section>
-    
-    
-        <hr class="w-48 h-1 mx-auto my-1 bg-slate-950 border-0 rounded md:my-10 dark:bg-slate-900">
-    
-    
+
         <!-- About -->
-        <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
-            <div class="container mx-auto">
+        <section class="overflow-hidden " id="about">
+            <div class="container mx-auto py-20 px-10">
                 <div class="-mx-4 flex flex-wrap items-center justify-between">
                     <div class="w-full px-4 lg:w-6/12">
                         <div class="-mx-3 flex items-center sm:-mx-4">
                             <div class="w-full px-3 sm:px-4 xl:w-2/8">
-                                <div class="relative z-10 my-4">
+                                <div class="relative my-4">
                                     <img src="/src/images/aboutus.png" alt="" class="w-full rounded-2xl" />
                                     <span class="absolute -right-7 -bottom-7 z-[-1]">
                                         <svg width="134" height="106" viewBox="0 0 134 106" fill="none"
@@ -435,39 +436,46 @@
                     <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
                         <div class="mt-10 lg:mt-0">
                             <span
-                                class="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white hover:uppercase">
-                                <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500">Why Choose Us</mark>
+                                class="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl">
+                                <mark class="px-2 text-white bg-blue-600 rounded">Why Choose Us</mark>
                             </span>
-                            <h2 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl">
+                            <h2 class="mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-4xl">
                                 Make your <span
                                     class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">customers
                                     happy</span> by giving services.
                             </h2>
-                            <p class="text-gray-500 dark:text-gray-400 ">
+                            <p class="text-gray-500">
                                 Welcome to our blockchain-based land registration platform! At [Company Name], we are
                                 revolutionizing the way land ownership is verified and recorded. With the power of
                                 blockchain technology, we provide a transparent, secure, and immutable solution for
                                 registering land titles.
-                                Our platform ensures the integrity of land records by leveraging decentralized consensus,
-                                eliminating the need for intermediaries and reducing the risk of fraud. By utilizing smart
-                                contracts, we automate and streamline the registration process, saving time and costs for
+                                Our platform ensures the integrity of land records by leveraging decentralized
+                                consensus,
+                                eliminating the need for intermediaries and reducing the risk of fraud. By utilizing
+                                smart
+                                contracts, we automate and streamline the registration process, saving time and costs
+                                for
                                 both landowners and government authorities.
-                                With a team of experts in blockchain technology and land registration, we are committed to
-                                creating a trustworthy and efficient system that empowers individuals and promotes fair land
+                                With a team of experts in blockchain technology and land registration, we are committed
+                                to
+                                creating a trustworthy and efficient system that empowers individuals and promotes fair
+                                land
                                 ownership. Join us on this transformative journey as we reshape the future of land
                                 registration, one block at a time.
                             </p>
-    
-                            <hr class="w-64 h-px my-8 bg-slate-950 border-0 dark:bg-slate-950">
-    
+
+                            <hr class="w-64 h-px my-8 bg-slate-950 border-0">
+
                             <h2
-                                class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white">
-                                Our <span class="text-blue-600 dark:text-blue-500">mission</span></h2>
-                            <p class="text-gray-500 dark:text-gray-400">
+                                class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl">
+                                Our <span class="text-blue-600">mission</span></h2>
+                            <p class="text-gray-500">
                                 Our mission is to revolutionize user registration by leveraging the power of blockchain
-                                technology. We aim to provide a secure and transparent platform that ensures the integrity
+                                technology. We aim to provide a secure and transparent platform that ensures the
+                                integrity
                                 and privacy of user data. By utilizing blockchain, we eliminate the need for centralized
-                                authorities, reducing the risk of data breaches and identity theft. Our goal is to empower
+                                authorities, reducing the risk of data breaches and identity theft. Our goal is to
+                                empower
                                 individuals with full control over their personal information while streamlining the
                                 registration process with efficiency and ease. Join us on this journey to create a more
                                 secure and user-centric registration experience.
@@ -481,18 +489,18 @@
                 </div>
             </div>
         </section>
-    
-        <hr class="w-48 h-1 mx-auto my-1 bg-slate-950 border-0 rounded md:my-10 dark:bg-slate-900">
-    
+
         <!-- Services -->
-        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
-            <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-    
+        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 "
+            id="services">
+            <div class="container mx-auto sm:text-center lg:max-w-2xl pb-20 px-10">
+
                 <h2
-                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                    Features</h2>
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+                    Services</h2>
                 <p class="text-base text-gray-700 md:text-lg">
-                    if you register your land with us so here is some awesome features for consumers to sell and buy lands.
+                    If you register your land with us so here is some awesome features for consumers to sell and buy
+                    lands.
                 </p>
             </div>
             <div class="grid gap-8 row-gap-10 lg:grid-cols-2">
@@ -507,14 +515,14 @@
                     </div>
                     <h6 class="mb-3 text-xl font-bold leading-5">Ease of use</h6>
                     <p class="mb-3 text-sm text-gray-900">
-                        It is extremely convenient to register a property using the Internet as the registration form can
-                        simply be downloaded online. Alternately, one can get the form from the concerned authority’s office
+                        It is extremely convenient to register a property using the Internet as the registration form
+                        can
+                        simply be downloaded online. Alternately, one can get the form from the concerned authority’s
+                        office
                         in the state. Once the details mentioned on the form and related documents are verified, the
                         property gets registered in approximately two-weeks' time.
                     </p>
-                    <a href="/" aria-label=""
-                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
-                        more</a>
+
                 </div>
                 <div class="max-w-md sm:mx-auto sm:text-center">
                     <div
@@ -527,14 +535,15 @@
                     </div>
                     <h6 class="mb-3 text-xl font-bold leading-5">Enhanced transparency</h6>
                     <p class="mb-3 text-sm text-gray-900">
-                        Details including the entire history of ownership, number of rooms, gross carpet area and foundation
-                        details are listed online. The objective is to hide nothing about the property from a prospective
-                        buyer, says Rajan Kumar, Founding Director, Prop Window, Gurgaon. This increases transparency and
+                        Details including the entire history of ownership, number of rooms, gross carpet area and
+                        foundation
+                        details are listed online. The objective is to hide nothing about the property from a
+                        prospective
+                        buyer, says Rajan Kumar, Founding Director, Prop Window, Gurgaon. This increases transparency
+                        and
                         minimises the chances of fraudulent practices in property deals.
                     </p>
-                    <a href="/" aria-label=""
-                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
-                        more</a>
+
                 </div>
                 <div class="max-w-md sm:mx-auto sm:text-center">
                     <div
@@ -547,11 +556,10 @@
                     </div>
                     <h6 class="mb-3 text-xl font-bold leading-5">Avoids litigation</h6>
                     <p class="mb-3 text-sm text-gray-900">
-                        As e-registration enlists all transactions related to the property, it helps to provide evidence in
+                        As e-registration enlists all transactions related to the property, it helps to provide evidence
+                        in
                         case of any dispute. </p>
-                    <a href="/" aria-label=""
-                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
-                        more</a>
+
                 </div>
                 <div class="max-w-md sm:mx-auto sm:text-center">
                     <div
@@ -565,24 +573,20 @@
                     <h6 class="mb-3 text-xl font-bold leading-5">Safety</h6>
                     <p class="mb-3 text-sm text-gray-900">
                         E-registration of property is safe on two accounts. Firstly, a hacker does not have access to
-                        property papers of an owner, such as the transfer of Power of Attorney. Secondly, there are multiple
+                        property papers of an owner, such as the transfer of Power of Attorney. Secondly, there are
+                        multiple
                         layers of security in government servers, which are SSL encrypted. In addition, they have a
                         personalised login system. </p>
-                    <a href="/" aria-label=""
-                        class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn
-                        more</a>
+
                 </div>
             </div>
         </div>
-    
-    
-        <hr class="w-48 h-1 mx-auto my-1 bg-slate-950 border-0 rounded md:my-10 dark:bg-slate-900">
-    
+
         <!-- Testimonials -->
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
+        <section class="text-gray-600 body-font" id="testimonials">
+            <div class="container py-20 px-10 mx-auto">
                 <h1
-                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+                    class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-center">
                     Testimonials</h1>
                 <br> <br>
                 <div class="flex flex-wrap -m-4">
@@ -595,7 +599,8 @@
                                 </path>
                             </svg>
                             <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                                carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                                carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack
+                                venmo,
                                 post-ironic heirloom try-hard pabst authentic iceland.</p>
                             <a class="inline-flex items-center">
                                 <img alt="testimonial" src="https://dummyimage.com/106x106"
@@ -616,14 +621,15 @@
                                 </path>
                             </svg>
                             <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                                carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo,
+                                carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack
+                                venmo,
                                 post-ironic heirloom try-hard pabst authentic iceland.</p>
                             <a class="inline-flex items-center">
                                 <img alt="testimonial" src="https://dummyimage.com/107x107"
                                     class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                                 <span class="flex-grow flex flex-col pl-4">
                                     <span class="title-font font-medium text-gray-900">Shubham Agrawal</span>
-                                    <span class="text-gray-500 text-sm">DESIGNER</span>
+                                    <span class="text-gray-500 text-sm">FULLSTACK DEVELOPER</span>
                                 </span>
                             </a>
                         </div>
@@ -631,156 +637,172 @@
                 </div>
             </div>
         </section>
-    
-        <hr class="w-48 h-1 mx-auto my-1 bg-slate-950 border-0 rounded md:my-10 dark:bg-slate-900">
-    
-        
-    
+
         <!-- Contact -->
-        <section class="text-gray-600 body-font relative">
-            <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <section class="text-gray-600 body-font relative" id="contact">
+            <div class="container py-20 px-10 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div class="lg:w-2/9 md:w-1/2  overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <img src="/src/images/contect.jpg" alt="sorry">
                 </div>
                 <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-                    <h2 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-5xl"><span
+                    <h2 class="mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-5xl"><span
                             class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Contact</span>
                         Us</h2>
                     <p class="leading-relaxed mb-5 text-gray-600">
                         If you have any query than please contect to our team.
                     </p>
                     <form action="">
-                    <div class="relative mb-4">
-                        <label for="name" autocomplete="on" class="leading-7 text-sm text-gray-600">Name</label>
-                        <input type="text" id="name" name="name"
-                            class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                    <div class="relative mb-4">
-                        <label for="contactEmail" autocomplete="on" class="leading-7 text-sm text-gray-600">Email</label>
-                        <input type="email" id="contactEmail" name="contactEmail"
-                            class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                    <div class="relative mb-4">
-                        <label for="message" autocomplete="on" class="leading-7 text-sm text-gray-600">Message</label>
-                        <textarea id="message" name="message"
-                            class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                    </div>
-                    <button type="submit" class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Submit</button>               
-                </form>
+                        <div class="relative mb-4">
+                            <label for="name" autocomplete="on" class="leading-7 text-sm text-gray-600">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="contactEmail" autocomplete="on"
+                                class="leading-7 text-sm text-gray-600">Email</label>
+                            <input type="email" id="contactEmail" name="contactEmail"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="message" autocomplete="on"
+                                class="leading-7 text-sm text-gray-600">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="mb-2 w-full text-white bg-blue-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Submit</button>
+                    </form>
                 </div>
             </div>
         </section>
-    
-    
-    
+
         <!-- Footer -->
-        <footer class="text-gray-600 bg-gray-700 body-font">
-            <div
-                class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="2"
-                            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                        <span class="ml-3 text-xl text-white">Tailblocks</span>
-                    </a>
-                    <p class="mt-2 text-sm text-white">Buy Land easily with us...!</p>
+        <footer class="bg-gray-700 text-center text-neutral-600 lg:text-left">
+            <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 lg:justify-between">
+                <div class="mr-12 hidden lg:block text-white">
+                    <span>Get connected with us on social networks:</span>
                 </div>
-                <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                        <nav class="list-none mb-10">
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">First Link</a>
-                            </li>
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">Second Link</a>
-                            </li>
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">Third Link</a>
-                            </li>
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">Fourth Link</a>
-                            </li>
-                        </nav>
+                <!-- Social network icons container -->
+                <div class="flex justify-center">
+                    <a href="#!" class="mr-6 text-white ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                        </svg>
+                    </a>
+                    <a href="#!" class="mr-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg>
+                    </a>
+                    <a href="#!" class="mr-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+                                fill-rule="evenodd" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#!" class="mr-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="#!" class="mr-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                    </a>
+                    <a href="#!" class=" text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mx-14 py-10 text-center md:text-left">
+                <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div class=" text-white">
+                        <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mr-3 h-4 w-4">
+                                <path
+                                    d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
+                            </svg>
+                            Tailblocks
+                        </h6>
+                        <p>
+                            Buy and Sell Land easily with us...!
+                        </p>
                     </div>
-                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                        <nav class="list-none mb-10">
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">First Link</a>
-                            </li>
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">Second Link</a>
-                            </li>
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">Third Link</a>
-                            </li>
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">Fourth Link</a>
-                            </li>
-                        </nav>
+                    <!-- Quick Links section -->
+                    <div class=" text-white">
+                        <h6 class="mb-4 flex justify-center text-lg font-semibold uppercase md:justify-start">
+                            Quick Links
+                        </h6>
+                        <p class="mb-2">
+                            <a href="#">Home</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href="#about">About Us</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href="#services">Services</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href="#testimonials">Testimonials</a>
+                        </p>
+                        <p>
+                            <a href="#contact">Contact Us</a>
+                        </p>
                     </div>
-                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-                        <nav class="list-none mb-10">
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">First Link</a>
-                            </li>
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">Second Link</a>
-                            </li>
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">Third Link</a>
-                            </li>
-                            <li>
-                                <a class="text-white hover:text-gray-100" href="">Fourth Link</a>
-                            </li>
-                        </nav>
+
+                    <!-- Contact section -->
+                    <div>
+                        <h6 class="mb-4 flex justify-center text-white font-semibold uppercase md:justify-start">
+                            Contact Us
+                        </h6>
+                        <p class="mb-2 flex items-center justify-center text-white md:justify-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mr-3 h-5 w-5">
+                                <path
+                                    d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                                <path
+                                    d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                            </svg>
+                            New York, NY 10012, US
+                        </p>
+                        <p class="mb-2 flex items-center text-white justify-center md:justify-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mr-3 h-5 w-5">
+                                <path
+                                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                <path
+                                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                            </svg>
+                            info@example.com
+                        </p>
+                        <p class="mb-2 flex items-center text-white justify-center md:justify-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mr-3 h-5 w-5">
+                                <path fill-rule="evenodd"
+                                    d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            +91 9875689754
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="bg-gray-100">
-                <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                    <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Land Registry —
-                        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
-                            target="_blank">@Teams</a>
-                    </p>
-                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                        <a class="text-gray-500">
-                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a class="ml-3 text-gray-500">
-                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                class="w-5 h-5" viewBox="0 0 24 24">
-                                <path
-                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a class="ml-3 text-gray-500">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                            </svg>
-                        </a>
-                        <a class="ml-3 text-gray-500">
-                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path stroke="none"
-                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
-                                </path>
-                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                            </svg>
-                        </a>
-                    </span>
-                </div>
+
+            <!--Copyright section-->
+            <div class="bg-gray-800 text-white p-6 text-center">
+                <span>© 2023 Copyright:</span>
+                <a class="font-semibold" href="#">Landblocks</a>
             </div>
         </footer>
 
@@ -790,5 +812,4 @@
     <script src="/src/js/main.js"></script>
 
 </body>
-
 </html>
