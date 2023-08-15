@@ -15,7 +15,7 @@ btn.addEventListener("click", () => {
 // Touch anywhere to close the navbar
 document.getElementById("mainWebpage").addEventListener("click", () => {
   if (!document.getElementById("navContent").classList.contains("hidden")) {
-      document.getElementById("navContent").classList.add("hidden");
+    document.getElementById("navContent").classList.add("hidden");
   }
 });
 
@@ -47,64 +47,54 @@ document.getElementById('registerBtn').addEventListener('click', function (reven
     document.getElementById("confirmPassCheck").innerText = ("Password not match!");
   }
   else {
-    
+
     //send otp
-    
-      rootp = generateOtp();
-          
-      var regPassword = {
-        user: email,
-        otp: rootp
-      };
-    
-      emailjs.send('service_q8m42ho', 'template_frigbdt', regPassword)
-        .then(function (response) {
-          alert('SUCCESS!', response.status, response.text);
 
-          document.getElementById("registerForm").classList.add("hidden");
-          document.getElementById("regOtpform").classList.remove("hidden");
+    rootp = generateOtp();
 
-        }, function (error) {
-          alert('FAILED...', error);
+    var regPassword = {
+      user: email,
+      otp: rootp
+    };
+
+    emailjs.send('service_q8m42ho', 'template_frigbdt', regPassword)
+      .then(function (response) {
+        alert('SUCCESS!', response.status, response.text);
+
+        document.getElementById("registerForm").classList.add("hidden");
+        document.getElementById("regOtpform").classList.remove("hidden");
+
+      }, function (error) {
+        alert('FAILED...', error);
+      });
+    document.getElementById('regCheckOtp').addEventListener('click', function (rcevent) {
+      rcevent.preventDefault();
+      rcotp = document.getElementById("regOtp").value;
+      if (rootp == rcotp) {
+        alert("Account created Successfully");
+        regOtpform.classList.add("hidden");
+        document.getElementById("regDetailsForm").classList.remove("hidden");
+
+        //on submit registration details form
+        submitDetails = document.getElementById("regDetails").addEventListener("click", function (detailsEvent) {
+          detailsEvent.preventDefault();
+          alert("Form Submited Successfully..");
+          document.getElementById("registerForm").classList.remove("hidden");
+          document.getElementById("regOtpform").classList.add("hidden");
+          document.getElementById("regDetailsForm").classList.add("hidden");
+          regModal.style.display = "none";
+          document.getElementById("regEmail").innerText = "";
+          document.getElementById("regPassword").innerText = "";
+          document.getElementById("confirmPassword").innerText = "";
         });
-        document.getElementById('regCheckOtp').addEventListener('click', function (rcevent) {
-          rcevent.preventDefault();
-          rcotp = document.getElementById("regOtp").value;
-          if (rootp == rcotp) {
-            alert("Account created");
-            regOtpform.classList.add("hidden");
-            document.getElementById("regDetailsForm").classList.remove("hidden");
+      }
+      else {
+        alert("OTP not matched");
+      }
+    });
 
-            //on submit registration details form
-            submitDetails = document.getElementById("regDetails").addEventListener("click",function(detailsEvent){
-              detailsEvent.preventDefault();
-              alert("Form Submited..");
-              document.getElementById("registerForm").classList.remove("hidden");
-              document.getElementById("regOtpform").classList.add("hidden");
-              document.getElementById("regDetailsForm").classList.add("hidden");
-              regModal.style.display = "none";
-              document.getElementById("regEmail").innerText = "";
-              document.getElementById("regPassword").innerText = "";
-              document.getElementById("confirmPassword").innerText = "";
-            });
-          }
-          else{
-            alert("otp not matched");
-          }
-        });
-    
   }
 });
-
-
-
-
-
-
-
-
-
-
 
 //Login modal
 let loginModal = document.getElementById("loginModal");
@@ -135,8 +125,6 @@ fpBtn.onclick = function () {
 fpCross.onclick = function () {
   fpModal.style.display = "none";
 }
-
-
 
 // Reset Password
 document.getElementById('sendOtp').addEventListener('click', function (event) {
@@ -171,7 +159,7 @@ document.getElementById('checkOtp').addEventListener('click', function (cevent) 
     checkOtpForm.classList.add("hidden");
     newPassword.classList.remove("hidden");
 
-    
+
 
     // compair new pass and confirm pass
     document.getElementById('newPasswordBtn').addEventListener('click', function (nevent) {
